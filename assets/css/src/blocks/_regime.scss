@@ -1,0 +1,130 @@
+.Regime {
+    width: 100%;
+    
+    &__list {
+        @include flexCenter;
+
+        @include media($small-desktop) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        width: 255px;
+        height: 488px;
+        padding: 17px 13px;
+        box-sizing: border-box;
+        background-color: $white;
+        border: 1px solid $lightGrey02;
+        border-radius: 2px;
+        cursor: pointer;
+        @include flexDirectionColumn;
+
+        @include media($small-desktop) {
+            margin-bottom: 10px;
+        }
+
+        @include media($mobile-s) {
+            width: 100%;
+            height: auto;
+            padding: 12px;
+        }
+
+        &:hover {
+            border-color: $mainBlue03;
+            transition: all 0.3s ease-out;
+        }
+
+        &--active {
+            border-color: $mainBlue03;
+            transition: all 0.3s ease-out;
+
+            .RadioSelection {
+                border-color: $mainBlue03;
+                transition: border 0.3s;
+
+                &__label {
+                    &:before {
+                        border-color: $green;
+                    }
+        
+                    &:after {
+                        background-color: $green;
+                        position: absolute;
+                        top: 50%;
+                        left: 4px;
+                        transform: translateY(-50%);
+                        border-radius: 100%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &__top {
+            text-align: center;
+            min-height: 42px;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            position: relative;
+            @include flexCenter;
+
+            h2 {
+                margin: 0;
+                max-width: 150px;
+                @include font(16, 21, 700, ('Roboto', sans-serif), $mainBlue02);
+
+                @include media($mobile-s) {
+                    max-width: initial;
+                }
+            }
+
+            &:after {
+                content: "";
+                width: 70px;
+                height: 1px;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                background-color: $lightGrey02;
+            }
+        }
+
+        &__center {
+            flex-grow: 1;
+            overflow: auto;
+            padding-bottom: 10px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+
+            @include media($mobile-s) { 
+                margin-right: 0;
+            }
+        }
+    
+        &__featuresList {
+            @include font(15, 17, 400, ('Roboto', sans-serif), $darkGrey);
+
+            &__item {
+                display: flex;
+                align-items: normal;
+                margin-bottom: 7px;
+
+                &:before {
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    flex-shrink: 0;
+                    margin-right: 8px;
+                    top: 8px;
+                    position: relative;
+                    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNXB4IiBoZWlnaHQ9IjVweCIgdmlld0JveD0iMCAwIDUgNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJUYWItMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMDguMDAwMDAwLCAtMjQ5LjAwMDAwMCkiIGZpbGw9IiM5REEyQTkiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMzciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLjAwMDAwMCwgNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOTY4LDIwNS4wODEzMDEgQzk2OCwyMDUuNjQ0OTg5IDk2OC4yMTEzOCwyMDYuMTMyNzg5IDk2OC42MzQxNDYsMjA2LjU0NDcxNSBDOTY5LjA1NjkxMywyMDYuOTU2NjQyIDk2OS41NTAxMzMsMjA3LjE2MjYwMiA5NzAuMTEzODIxLDIwNy4xNjI2MDIgQzk3MC42NTU4MjksMjA3LjE2MjYwMiA5NzEuMTMyNzg5LDIwNi45NDU4MDIgOTcxLjU0NDcxNSwyMDYuNTEyMTk1IEM5NzEuOTU2NjQyLDIwNi4wNzg1ODkgOTcyLjE2MjYwMiwyMDUuNjAxNjI5IDk3Mi4xNjI2MDIsMjA1LjA4MTMwMSBDOTcyLjE2MjYwMiwyMDQuNTE3NjEyIDk3MS45NTY2NDIsMjA0LjAyOTgxMiA5NzEuNTQ0NzE1LDIwMy42MTc4ODYgQzk3MS4xMzI3ODksMjAzLjIwNTk2IDk3MC42NDQ5ODksMjAzIDk3MC4wODEzMDEsMjAzIEM5NjkuNTE3NjEyLDIwMyA5NjkuMDI5ODEyLDIwMy4yMDU5NiA5NjguNjE3ODg2LDIwMy42MTc4ODYgQzk2OC4yMDU5NiwyMDQuMDI5ODEyIDk2OCwyMDQuNTE3NjEyIDk2OCwyMDUuMDgxMzAxIFoiIGlkPSLCty1jb3B5LTciPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+) no-repeat center center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}

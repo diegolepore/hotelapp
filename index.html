@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel App</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700&display=swap"
+        rel="stylesheet">
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/application.css">
+</head>
+
+<body>
+    <div class="l-container">
+        <!-- Navigation -->
+        <nav class="TabsNavigation TabsNavigation--alignRight">
+            <ul class="TabsNavigation__list">
+                <li class="TabsNavigation__list__item TabsNavigation__list__item--active"
+                    data-tab-content-id="TabContent1">
+                    Tab 1
+                </li>
+                <li class="TabsNavigation__list__item" data-tab-content-id="TabContent2">
+                    Tab 2
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Tab Content 1 -->
+        <section class="TabContent l-flex l-flex--directionColumn" id="TabContent1">
+
+            <div class="HeadingStarsWrapper l-flex l-flex--center">
+                <h1>HOTEL <span class="bold">Mieres del Camín Apartamentos</span></h1>
+
+                <ul class="Stars Stars--marginLeft">
+                    <li class="Stars__item"></li>
+                    <li class="Stars__item"></li>
+                    <li class="Stars__item"></li>
+                    <li class="Stars__item"></li>
+                </ul>
+            </div>
+
+            <div class="Regime">
+                <ul class="Regime__list">
+
+                    <li class="Regime__item Regime__item--active">
+                        <div class="Regime__item__top">
+                            <h2>Solo Alojamiento</h2>
+                        </div>
+                        <div class="Regime__item__center">
+                            <ul class="Regime__item__featuresList">
+                                <li class="Regime__item__featuresList__item">
+                                    Sin régimen
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Botella de agua de bienvenida
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Regime__item__bottom">
+
+                            <div class="RadioSelection">
+                                <input class="RadioSelection__input" type="radio" name="selectRegime"
+                                    id="radioInputRegime1">
+                                <label class="RadioSelection__label" for="radioInputRegime1">Elegir régimen</label>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="Regime__item">
+                        <div class="Regime__item__top">
+                            <h2>Alojamiento y Desayuno</h2>
+                        </div>
+                        <div class="Regime__item__center">
+                            <ul class="Regime__item__featuresList">
+                                <li class="Regime__item__featuresList__item">
+                                    Desayuno buffet completo
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Regime__item__bottom">
+
+                            <div class="RadioSelection">
+                                <input class="RadioSelection__input" type="radio" name="selectRegime"
+                                    id="radioInputRegime2">
+                                <label class="RadioSelection__label" for="radioInputRegime2">Elegir régimen</label>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="Regime__item">
+                        <div class="Regime__item__top">
+                            <h2>Media Pensión</h2>
+                        </div>
+                        <div class="Regime__item__center">
+                            <ul class="Regime__item__featuresList">
+                                <li class="Regime__item__featuresList__item">
+                                    Desayuno buffet completo
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Cena buffet
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    No incluye
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Regime__item__bottom">
+
+                            <div class="RadioSelection">
+                                <input class="RadioSelection__input" type="radio" name="selectRegime"
+                                    id="radioInputRegime3">
+                                <label class="RadioSelection__label" for="radioInputRegime3">Elegir régimen</label>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="Regime__item">
+                        <div class="Regime__item__top">
+                            <h2>Todo Incluido</h2>
+                        </div>
+                        <div class="Regime__item__center">
+                            <ul class="Regime__item__featuresList">
+                                <li class="Regime__item__featuresList__item">
+                                    Dispondrás de comida y bebida todo el día y durante toda tu estancia.
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Restaurante buffet
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Snack Bar
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Servicio de bares (marcas nacionales)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Regime__item__bottom">
+
+                            <div class="RadioSelection">
+                                <input class="RadioSelection__input" type="radio" name="selectRegime"
+                                    id="radioInputRegime4">
+                                <label class="RadioSelection__label" for="radioInputRegime4">Elegir régimen</label>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="Regime__item">
+                        <div class="Regime__item__top">
+                            <h2>Unlimited Services</h2>
+                        </div>
+                        <div class="Regime__item__center">
+                            <ul class="Regime__item__featuresList">
+                                <li class="Regime__item__featuresList__item">
+                                    Restaurante buffet con bebidas Premium
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Restaurante a la carta (una cena por estancia)
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Snack Bar con bebidas Premium
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Minibar incluido
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Acceso a SPA y 45 minutos de masaje por persona
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Actividades deportivas (acuáticas sin motor)
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Caja fuerte
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Parking gratuito
+                                </li>
+                                <li class="Regime__item__featuresList__item">
+                                    Lavandería
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Regime__item__bottom">
+
+                            <div class="RadioSelection">
+                                <input class="RadioSelection__input" type="radio" name="selectRegime"
+                                    id="radioInputRegime5">
+                                <label class="RadioSelection__label" for="radioInputRegime5">Elegir régimen</label>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Tab Content 2 -->
+        <section class="TabContent l-flex l-flex--directionColumn is-hidden" id="TabContent2">
+
+            <ul class="Collapsible">
+
+                <li class="Collapsible__item">
+                    <div class="Collapsible__trigger">
+                        <h2>Mejora tu estancia</h2>
+                        <span>Opcional</span>
+                    </div>
+
+                    <div class="Collapsible__flag">
+                        Exclusivo hoteles.com
+                    </div>
+
+                    <div class="Collapsible__content">
+
+                        <div class="Collapsible__content__inner">
+
+                            <div class="Collapsible__content__top">
+                                <img src="assets/img/img1.png" alt="Mujeres haciendo yoga">
+
+                                <div class="Collapsible__content__top__info">
+                                    <h3>Olvídese de la rutina</h3>
+
+                                    <div class="Collapsible__content__top__info__center">
+                                        <p>
+                                            Cras vehicula vestibulum dapibus. Pellentesque auctor dolor et purus
+                                            facilisis maximus. Mauris eget urna luctus, imperdiet neque nec, aliquet
+                                            lorem.
+                                        </p>
+                                    </div>
+
+                                    <div class="Collapsible__content__top__info__bottom">
+                                        <button class="Collapsible__button Collapsible__button--arrowRight">
+                                            Mas información y condiciones
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Collapsible__content__bottom">
+                                <h4>Incluye</h4>
+                                <ul class="Collapsible__content__bottom__list">
+                                    <li class="Collapsible__content__bottom__item">
+                                        <p>
+                                            Baño javanés Mandi Susu tradicional: evocación de los baños que tomaban las
+                                            princesas de las cortes y palacios de Java Central, en Indonesia, con
+                                            antiguas recetas en las que se mezclaba la leche y las especias.
+                                        </p>
+                                    </li>
+                                    <li class="Collapsible__content__bottom__item">
+                                        <p>Baño floral balinés: con aceite de almendra dulce y aromas de jazmín.</p>
+                                        <p>Baño oceánico: con sal marina y gajos de mandarina o lima.</p>
+                                        <p>Baño de pies floral: baño aromático de pies, con pétalos y aromas.</p>
+                                    </li>
+                                    <li class="Collapsible__content__bottom__item">
+                                        <p>Baño de vapor herbal: baño de vapor con hierbas del sudeste asiático.</p>
+                                        <p>Rain shower.</p>
+                                    </li>
+                                </ul>
+                                <p class="Collapsible__content__bottom__info">
+                                    Valores no acumulables a otras promociones similares
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="Collapsible__item">
+                    <div class="Collapsible__trigger">
+                        <h2>Servicios de habitación</h2>
+                        <span>Opcional</span>
+                    </div>
+
+                    <div class="Collapsible__flag">
+                        Exclusivo hoteles.com
+                    </div>
+
+                    <div class="Collapsible__content">
+                        <div class="Collapsible__content__inner">
+                            <div class="Collapsible__content__top">
+                                <img src="assets/img/img2.png" alt="Mujeres haciendo yoga">
+                                <div class="Collapsible__content__top__info">
+                                    <h3>Experiencias y programas SPA con agua</h3>
+                                    <div class="Collapsible__content__top__info__center">
+                                        <p>
+                                            Las experiencias spa de agua tienen una presencia muy especial en SPA
+                                            Sensations. No es extraño si consideramos que la mayor parte del planeta,
+                                            así como del propio cuerpo humano, están compuestos de agua.
+                                        </p>
+                                        <p>
+                                            El arte de recrear experiencias de agua en variaciones ilimitadas es la base
+                                            de la propuesta de SPA Sensations a sus clientes, aportando el refinamiento
+                                            al baño y a la hidratación en todas sus formas. Un mundo mágico de
+                                            posibilidades, más allá de la terapia y del que ahora usted, también podrá
+                                            disfrutar.
+                                        </p>
+                                    </div>
+
+                                    <div class="Collapsible__content__top__info__bottom">
+                                        <button class="Collapsible__button Collapsible__button--arrowRight">
+                                            Mas información y condiciones
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Collapsible__content__bottom">
+                                <h4>Incluye</h4>
+                                <ul class="Collapsible__content__bottom__list">
+                                    <li class="Collapsible__content__bottom__item">
+                                        <p>
+                                            Baño javanés Mandi Susu tradicional: evocación de los baños que tomaban las
+                                            princesas de las cortes y palacios de Java Central, en Indonesia, con
+                                            antiguas recetas en las que se mezclaba la leche y las especias.
+                                        </p>
+                                    </li>
+                                    <li class="Collapsible__content__bottom__item">
+                                        <p>Baño floral balinés: con aceite de almendra dulce y aromas de jazmín.</p>
+                                        <p>Baño oceánico: con sal marina y gajos de mandarina o lima.</p>
+                                        <p>Baño de pies floral: baño aromático de pies, con pétalos y aromas.</p>
+                                    </li>
+                                    <li class="Collapsible__content__bottom__item">
+                                        <p>Baño de vapor herbal: baño de vapor con hierbas del sudeste asiático.</p>
+                                        <p>Rain shower.</p>
+                                    </li>
+                                </ul>
+                                <p class="Collapsible__content__bottom__info">
+                                    Valores no acumulables a otras promociones similares
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="assets/js/src/lib/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/application.js"></script>
+</body>
+
+</html>

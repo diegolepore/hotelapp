@@ -1,0 +1,31 @@
+// Colors
+$mainBlue: #003970;
+$mainBlue01: #033970;
+$mainBlue02: #105AA3;
+$mainBlue03: #326C96;
+$mainBlue04: #4BA7EE;
+$mainBlue05: #48A8F1;
+
+$darkGrey: #001841;
+
+$midGrey01: #616469;
+$midGrey02: #64676C;
+$midGrey03: #8B9199;
+$midGrey04: #505c77;
+
+$lightGrey: #FAFAFA;
+$lightGrey01: #F9F9F9;
+$lightGrey02: #C9E3F9;
+$lightGrey03: #DEE1E8;
+
+$white: #ffffff;
+$red: #E82E34;
+$green: #6DC138;
+
+// MediaQueries Breakpoints
+// See https://github.com/carloscabo/mqbe and ./utils for both js and sass media queries helpers
+$mobile-s: 563px;
+$mobile: 767px;
+$tablet: 1023px;
+$small-desktop:  1024px;
+$medium-desktop: 1264px;

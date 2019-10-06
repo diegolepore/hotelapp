@@ -1,0 +1,45 @@
+.RadioSelection {
+    width: 100%;
+    height: 46px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: $lightGrey01;
+    border: 1px solid transparent;
+    @include flexLeft;
+
+    &__input {
+        position: absolute;
+        left: -99999px;
+    }
+
+    &__label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        @include font(16, 24, 400, ('Roboto', sans-serif), $mainBlue01);
+        
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border: 1px solid $midGrey03;
+            border-radius: 100%;
+            background: $white;
+        }
+
+        &:after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+    }
+}

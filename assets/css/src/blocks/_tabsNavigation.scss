@@ -1,0 +1,46 @@
+.TabsNavigation {
+    display: flex;
+    background-color: $white;
+    box-shadow: 0 1px 2px rgba($midGrey04, 0.2);
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    &--alignRight {
+        justify-content: flex-end;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        &__item {
+            width: 120px;
+            height: 47px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            @include font(16, 24, 400, ('Roboto Slab', serif), $mainBlue04 );
+
+            &--active {
+                color: $mainBlue;
+                border-color: $mainBlue;
+            }
+
+            @include media($mobile) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.TabContent {
+    margin-top: 3px;
+    background-color: $lightGrey01;
+    box-shadow: 0 1px 2px rgba($midGrey04, 0.2);
+    border-radius: 0 0 3px 3px;
+    padding: 0 17px 30px 17px;
+    box-sizing: border-box;
+}

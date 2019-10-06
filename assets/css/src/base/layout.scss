@@ -1,0 +1,37 @@
+body {
+    background-color: $lightGrey;
+}
+
+.l-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.l-flex {
+    display: flex;
+    align-items: center;
+
+    &--center {
+        justify-content: center;
+    }
+
+    &--right {
+        justify-content: flex-end;
+    }
+
+    &--directionColumn {
+        flex-direction: column;
+    }
+
+    @for $i from 1 through 300 {
+        &--height#{$i} {
+            height: $i#{px};
+        }
+    }
+}
+
+.is-hidden {
+    display: none;
+}
+  
