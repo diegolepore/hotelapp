@@ -7,16 +7,11 @@ const gulp = require('gulp'),
     input = './assets/css/src/application.scss',
     output = './assets/css';
 
-const sassOptions = {
-    errLogToConsole: true,
-    outputStyle: 'expanded'
-};
-
 gulp.task('sass', () => {
   return gulp
     .src(input)
     .pipe(sourcemaps.init())
-    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
         "overrideBrowserslist": [
             "> 1%",
