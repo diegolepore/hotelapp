@@ -4,7 +4,6 @@ const gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     minify = require('gulp-minify-css'),
     browserSync = require('browser-sync').create(),
-    cache = require('gulp-cache'), 
     input = './assets/css/src/application.scss',
     output = './assets/css';
 
@@ -35,8 +34,7 @@ gulp.task('sass', () => {
     }))
     .pipe(minify())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(output))
-    .pipe(cache.clear());
+    .pipe(gulp.dest(output));
 });
 
 gulp.task('serve', gulp.series('sass', () => {
